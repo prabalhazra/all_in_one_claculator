@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">All In One Calculator</string>
+    <string name="by_prabal_hazra">By\n Prabal Hazra</string>
+
+
+    <!-- Scientific Calculator -->
+    <string name="text_0">0</string>
+    <string name="txt_ac">AC</string>
+    <string name="divide">÷</string>
+    <string name="startBracket">(</string>
+    <string name="endBracket">)</string>
+    <string name="txt_7">7</string>
+    <string name="txt_1_x">1/x</string>
+    <string name="sqrt">√</string>
+    <string name="txt_x_sqre">x²</string>
+    <string name="txt_x">x!</string>
+    <string name="txt_ln">ln</string>
+    <string name="txt_log">log</string>
+    <string name="txt_tan">tan</string>
+    <string name="txt_cos">cos</string>
+    <string name="txt_sin">sin</string>
+    <string name="multiplication">×</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="equal">=</string>
+    <string name="text_dot">.</string>
+    <string name="pi">π</string>
+    <string name="text_1">1</string>
+    <string name="text_2">2</string>
+    <string name="text_3">3</string>
+    <string name="text_4">4</string>
+    <string name="text_5">5</string>
+    <string name="text_6">6</string>
+    <string name="text_8">8</string>
+    <string name="text_9">9</string>
+
+
+    <!-- EMI Calculator -->
+    <string name="mortgage_hint">Mortgage</string>
+    <string name="years_hint">Years</string>
+    <string name="interest_rate_hint">Interest Rate</string>
+    <string name="loan_amount">Loan Amount</string>
+    <string name="interest_rate">Interest Rate</string>
+    <string name="loan_tenure_yr">Number of Years</string>
+    <string name="calculate">Calculate</string>
+    <string name="total_amount">Total Payable Amount: %s</string>
+    <string name="total_interest">Total Payable Interest: %s</string>
+    <string name="amount">Loan Amount: %s</string>
+    <string name="emi">Your monthly EMI is: %s</string>
+
+    <!-- Currency Converter -->
+    <string name="currency_converter">Currency Converter</string>
+    <string name="convert">Convert</string>
+    <string name="currency_amount">Amount</string>
+    <string name="enter_the_amount">Enter the amount</string>
+
+    <string-array name="currency_codes">
+        <item>CAD</item>
+        <item>EUR</item>
+        <item>HKD</item>
+        <item>ISK</item>
+        <item>PHP</item>
+        <item>DKK</item>
+        <item>HUF</item>
+        <item>CZK</item>
+        <item>AUD</item>
+        <item>RON</item>
+        <item>SEK</item>
+        <item>IDR</item>
+        <item>INR</item>
+        <item>BRL</item>
+        <item>RUB</item>
+        <item>HRK</item>
+        <item>JPY</item>
+        <item>THB</item>
+        <item>CHF</item>
+        <item>SGD</item>
+        <item>PLN</item>
+        <item>BGN</item>
+        <item>CNY</item>
+        <item>NOK</item>
+        <item>NZD</item>
+        <item>ZAR</item>
+        <item>USD</item>
+        <item>MXN</item>
+        <item>ILS</item>
+        <item>GBP</item>
+        <item>KRW</item>
+        <item>MYR</item>
+    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="india">India</string>
+    <string name="divider">-</string>
+    <string name="inr">INR</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+
+</resources>

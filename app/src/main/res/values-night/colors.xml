@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#22252D</color>
+    <color name="btnColor">#353A44</color>
+    <color name="viewColor">#292D36</color>
+    <color name="greenBtnColor">#26DBBB</color>
+    <color name="brownBtnColor">#DE6263</color>
+    <color name="text_color">#FFF</color>
+    <color name="white">#000</color>
+    <color name="dark">#BFFFFFFF</color>
+
+    <color name="blac_shade_1">#292D36</color>
+    <color name="black_shade_2">#272B33</color>
+    <color name="black_shade_3">#22252D</color>
+    <color name="yellow">#C37F01</color>
+
+    <color name="icon_color">#A5D6A7</color>
+
+    <color name="blue_color">#667AFF</color>
+    <color name="background">#121212</color>
+    <color name="card_background">#27325F</color>
+    <color name="primary_text">#FFFFFF</color>
+    <color name="secondary_text">#797F95</color>
+</resources>

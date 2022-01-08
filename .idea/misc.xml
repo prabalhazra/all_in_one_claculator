@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/phono/allinonecalculator/app/src/main/res/drawable/bottom_nav.xml" value="0.24166666666666667" />
+        <entry key="..\:/phono/allinonecalculator/app/src/main/res/drawable/ic_backspace.xml" value="0.21666666666666667" />
+        <entry key="..\:/phono/allinonecalculator/app/src/main/res/drawable/ic_calculate.xml" value="0.22777777777777777" />
+        <entry key="..\:/phono/allinonecalculator/app/src/main/res/drawable/ic_currency_exchange.xml" value="0.22777777777777777" />
+        <entry key="..\:/phono/allinonecalculator/app/src/main/res/drawable/ic_emi_calculator.xml" value="0.22777777777777777" />
+        <entry key="..\:/phono/allinonecalculator/app/src/main/res/drawable/ic_interest_rate.xml" value="0.22777777777777777" />
+        <entry key="..\:/phono/allinonecalculator/app/src/main/res/drawable/ic_loan_amount.xml" value="0.22777777777777777" />
+        <entry key="..\:/phono/allinonecalculator/app/src/main/res/drawable/ic_year.xml" value="0.22777777777777777" />
+        <entry key="..\:/phono/allinonecalculator/app/src/main/res/drawable/nav_item_color.xml" value="0.815625" />
+        <entry key="..\:/phono/allinonecalculator/app/src/main/res/layout/activity_main.xml" value="0.18611111111111112" />
+        <entry key="..\:/phono/allinonecalculator/app/src/main/res/layout/activity_splash_screen.xml" value="0.21302083333333333" />
+        <entry key="..\:/phono/allinonecalculator/app/src/main/res/layout/custom_spinner.xml" value="0.19814814814814816" />
+        <entry key="..\:/phono/allinonecalculator/app/src/main/res/layout/fragment_currency_converter.xml" value="0.24322916666666666" />
+        <entry key="..\:/phono/allinonecalculator/app/src/main/res/layout/fragment_currency_converter2.xml" value="0.18981481481481483" />
+        <entry key="..\:/phono/allinonecalculator/app/src/main/res/layout/fragment_emi_calculator.xml" value="0.1824074074074074" />
+        <entry key="..\:/phono/allinonecalculator/app/src/main/res/layout/fragment_scientific_calculator.xml" value="0.1648148148148148" />
+        <entry key="..\:/phono/allinonecalculator/app/src/main/res/layout/fragment_view_page.xml" value="0.13796296296296295" />
+        <entry key="..\:/phono/allinonecalculator/app/src/main/res/layout/spinner_item.xml" value="0.24322916666666666" />
+        <entry key="..\:/phono/allinonecalculator/app/src/main/res/layout/spinner_to.xml" value="0.1935185185185185" />
+        <entry key="..\:/phono/allinonecalculator/app/src/main/res/menu/bottom_nav.xml" value="0.4" />
+        <entry key="..\:/phono/allinonecalculator/app/src/main/res/menu/buttom_nav.xml" value="0.24322916666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

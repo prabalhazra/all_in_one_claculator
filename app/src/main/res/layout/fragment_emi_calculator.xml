@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/loan_amount_image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:contentDescription="@string/loan_amount"
+            android:src="@drawable/ic_loan_amount"
+            app:layout_constraintBottom_toBottomOf="@+id/loan_amount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/loan_amount" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loan_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:hint="@string/loan_amount"
+            app:layout_constraintEnd_toEndOf="@+id/interest_rate"
+            app:layout_constraintStart_toEndOf="@id/loan_amount_image"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/loan_amount_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/interest_rate_image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:contentDescription="@string/interest_rate"
+            android:src="@drawable/ic_interest_rate"
+            app:layout_constraintBottom_toBottomOf="@+id/interest_rate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/interest_rate" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/interest_rate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:hint="@string/interest_rate"
+            app:layout_constraintEnd_toEndOf="@+id/loan_tenure"
+            app:layout_constraintStart_toEndOf="@+id/interest_rate_image"
+            app:layout_constraintTop_toBottomOf="@id/loan_amount">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/interest_rate_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/loan_tenure_image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:contentDescription="@string/interest_rate"
+            android:src="@drawable/ic_year"
+            app:layout_constraintBottom_toBottomOf="@+id/loan_tenure"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/loan_tenure" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loan_tenure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:hint="@string/loan_tenure_yr"
+            app:layout_constraintEnd_toEndOf="@+id/calculate_btn"
+            app:layout_constraintStart_toEndOf="@id/loan_tenure_image"
+            app:layout_constraintTop_toBottomOf="@id/interest_rate">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/loan_tenure_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/calculate_btn"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/calculate"
+            android:textSize="18sp"
+            app:cornerRadius="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loan_tenure" />
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@id/calculate_btn"
+            app:layout_constraintStart_toStartOf="@id/calculate_btn"
+            app:layout_constraintTop_toBottomOf="@id/calculate_btn">
+
+            <TextView
+                android:id="@+id/amount"
+                style="@style/Widget.EMICalculator.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="@+id/calculate_btn"
+                app:layout_constraintTop_toBottomOf="@+id/calculate_btn"
+                tools:text="Loan Amount: 500000" />
+
+            <View
+                android:id="@+id/dotLine1"
+                android:layout_height="2dip"
+                android:background="#FF909090"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/total_interest"
+                style="@style/Widget.EMICalculator.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="@+id/calculate_btn"
+                app:layout_constraintTop_toBottomOf="@+id/amount"
+                tools:text="Total Interest: 200000" />
+
+            <View
+                android:id="@+id/dotLine2"
+                android:layout_height="2dip"
+                android:background="#FF909090"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/total_payment"
+                style="@style/Widget.EMICalculator.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="@+id/calculate_btn"
+                app:layout_constraintTop_toBottomOf="@+id/total_interest"
+                tools:text="Total Payment: 70000" />
+
+            <View
+                android:id="@+id/dotLine3"
+                android:layout_height="2dip"
+                android:background="#FF909090"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/monthly_emi"
+                style="@style/Widget.EMICalculator.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="@+id/calculate_btn"
+                app:layout_constraintTop_toBottomOf="@+id/total_payment"
+                tools:text="Your monthly EMI is: 5210" />
+
+        </TableLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
